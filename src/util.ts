@@ -115,7 +115,7 @@ const getPlayerName = (player: SRCPlayer) => {
 }
 
 const getVideoUrl = (videos: SRCVideo | null) => {
-  if (!videos) {
+  if (!videos?.links) {
     return null
   }
 
